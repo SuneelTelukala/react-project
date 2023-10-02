@@ -1,0 +1,8 @@
+#body {
+    background-image: url("/public/netflix.jpg");
+    height: 100vh;
+}
+#shade{
+    background-color: rgba(0,0,0,0.8);
+    height: 100vh;
+}
