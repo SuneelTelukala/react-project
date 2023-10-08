@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <script>
+        function ThemeChange(){
+            var ThemeCheckbox = document.getElementById("ThemeCheckbox");
+            var form = document.querySelector("form");
+            if(ThemeCheckbox.checked){
+                form.className = "bg-dark text-white p-3 border border-2 border-dark";
+                document.querySelector("button").className = "btn btn-light w-100";
+            } else {
+                form.className = "border border-2 border-dark p-3";
+                document.querySelector("button").className = "btn btn-dark w-100";
+            }
+        }
+    </script>
+</head>
+<body class="container-fluid d-flex justify-content-center align-items-center" style="height: 500px;">
+    <form class="border border-2 border-dark p-3">
+        <div class="form-switch">
+            <input type="checkbox" id="ThemeCheckbox" onchange="ThemeChange()" class="form-check-input"> Dark Theme
+        </div>
+        <dl>
+            <h4> <span class="bi bi-person-fill"></span> User Login</h4>
+            <dt>User Name</dt>
+            <dd><input type="text" class="form-control"></dd>
+            <dt>Password</dt>
+            <dd><input type="password" class="form-control"></dd>
+        </dl>
+        <button class="btn btn-dark w-100">Login</button>
+    </form>
+</body>
+</html>

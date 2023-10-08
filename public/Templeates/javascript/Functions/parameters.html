@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Details(id, name, stock, cities, rating){
+            document.write(`
+                Id = ${id} <br>
+                Name = ${name} <br>
+                Stock = ${stock} <br>
+                Cities = ${cities.toString()} <br>
+                Rating = ${rating.rate} [${rating.count}]
+            `);
+        }
+        Details(1, "TV", true, ["Delhi", "Hyd"], {rate:3.4, count:4500});
+    </script>
+</body>
+</html>

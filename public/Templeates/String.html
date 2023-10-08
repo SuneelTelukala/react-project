@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function VerifyAge(){
+            var age=document.getElementById("Age").value;
+            var error=document.getElementById("error");
+            if(isNaN(age)){
+                error.innerHTML ="Age must be number";
+            }else{
+                document.write("verified successfully");
+            }
+        }
+    </script>
+</head>
+<body>
+       <h1>String Formates</h1>
+       <dl>
+            <dt>username</dt>
+            <dd><input type="text" id="Age"></dd>
+            <dd style= color:red; id="error"></dd>
+
+       </dl>
+       <button onclick="VerifyAge()">Submit</button>
+
+    
+</body>
+</html>

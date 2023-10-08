@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function RegisterClick(){
+            var username = document.getElementById("UserName");
+            var usererror = document.getElementById("UserError");
+            if(username.value=="") {
+                usererror.innerHTML = "User Name Required".bold().italics().fontcolor('red');
+                username.style.border = "1px solid red";
+                username.style.borderRadius = "10px";
+            } else {
+                document.write("Success..");
+            }
+        }
+        function ChangeCase(){
+            var username = document.getElementById("UserName").value;
+            document.getElementById("UserName").value = username.toUpperCase();
+            document.getElementById("UserError").innerHTML="";
+        }
+        
+    </script>
+</head>
+<body>
+         <h1>String number</h1>
+         <dl>
+            <dt>username</dt>
+            <dd><input type="text" onblur="ChangeCase" id="UserName" placeholder="Name in Block Letters"></dd>
+            <dd id="UserError"></dd>
+         </dl>
+         <button onclick="RegisterClick()">Register</button>
+</body>
+</html>

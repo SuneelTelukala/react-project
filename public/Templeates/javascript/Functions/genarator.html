@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function*  Demo()
+        {
+            yield 10;
+            yield 20;
+            yield 30;
+        }
+        var obj = Demo();
+        console.log(obj.next().value);
+        console.log(obj.next().value);
+        console.log(obj.next().value);
+        console.log(obj.next());
+    </script>
+</body>
+</html>

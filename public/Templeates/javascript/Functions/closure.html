@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Outer(){
+            var x = "Hello ! from outer";
+            function Inner(){
+               var y = "Hello ! from Inner" + "<br>" + x;
+               return y;
+            }
+           document.write(Inner());
+        }
+        Outer();
+     </script>
+</body>
+</html>

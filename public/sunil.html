@@ -1,63 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
-    <title>Document</title>
-</head>
-<style>
-  .btn1{
-    border-radius: 20px;
-  }
-  .btn2{
-    border-radius: 20px;
-  }
-</style>
-<body>
-     <div class="container-fluid bg-primary">
-        <div class=" d-flex justify-content-between text-white">
-          
-         <div>ARSHA</div>
-        
-         <div>HOME</div>
-         <div>About</div>
-         <div>Servise</div>
-         <div>Portfoio</div>
-         <div>Team</div>
-         <div>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item">react</a></li>
-            <li><a class="dropdown-item">angular</a></li>
-            <li><a class="dropdown-item">nodejs</a></li>
-          </ul>
-         </div>
-         <div>Contact</div>
-         <div>
-          <button class="btn2">Get started</button>
-         </div>
-         </div>
-         <div class="d-flex justify-content-between">
-         <div class="pt-5 p-md-5">
-          <h1>Better Solutitons For <br>
-          Your Business</h1>
-         
-         
-          <p>we are team of talented desinerars making <br>website with bootstrap</p>
-          <button class="btn1">Get started</button>
-          <span class="bi bi-play-btn ">watch videos
-            
-          </span>
-          
-         </div>
-         <div class="w-50 h-50 pe-5" >
-          <img src="realme.jpg" class="img-rounded" alt="Cinque Terre ">
-
-         </div>
-         </div>
-
-    </div>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function add()
+    {
+      var numOne, numTwo, sum;
+      numOne = parseInt(document.getElementById("first").value);
+      numTwo = parseInt(document.getElementById("second").value);
+      sum = numOne + numTwo;
+      document.getElementById("answer").value = sum;
+    }
+    </script>
+    </head>
+    <body>
     
-</body>
-</html>
+    <p>Enter the First Number: <input id="first"></p>
+    <p>Enter the Second Number: <input id="second"></p>
+    <button onclick="add()">Add</button>
+    <p>Sum = <input id="answer"></p>
+    
+    </body>
+    
+</head>
+
+  
